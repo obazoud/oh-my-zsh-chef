@@ -21,7 +21,6 @@ node['oh_my_zsh']['users'].each do |user_hash|
     user user_hash[:login]
     reference node['oh_my_zsh'][:reference]
     revision node['oh_my_zsh'][:revision]
-    checkout_branch node['oh_my_zsh'][:checkout_branch]
     action :sync
   end
 
